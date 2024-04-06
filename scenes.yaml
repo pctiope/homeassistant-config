@@ -1,0 +1,39 @@
+- id: '1712333001121'
+  name: Sleep
+  entities:
+    fan.mi_air_purifier_3_3h:
+      preset_modes:
+      - Auto
+      - Silent
+      - Favorite
+      - Fan
+      percentage: 33
+      percentage_step: 33.333333333333336
+      preset_mode: Silent
+      use_time: 117139500
+      friendly_name: Mi Air Purifier 3/3H
+      supported_features: 9
+      state: 'on'
+    light.desk_lamp_ambient_light:
+      supported_color_modes:
+      - brightness
+      color_mode:
+      brightness:
+      friendly_name: Desk lamp Ambient Light
+      supported_features: 0
+      state: 'off'
+    light.desk_lamp:
+      supported_color_modes:
+      - brightness
+      color_mode:
+      brightness:
+      scene: 1
+      delayed_turn_off:
+      reminder: false
+      night_light_mode: true
+      eyecare_mode: true
+      friendly_name: Desk lamp
+      supported_features: 0
+      state: 'off'
+  icon: mdi:sleep
+  metadata: {}

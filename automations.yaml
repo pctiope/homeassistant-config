@@ -1,0 +1,16 @@
+- id: '1712333178513'
+  alias: Sleep automation
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 6f5ac72349aa2abe2830429a87333fe9
+    entity_id: 933d91bd29ca95b35255b26dfe77858f
+    domain: light
+  condition: []
+  action:
+  - service: scene.turn_on
+    metadata: {}
+    target:
+      entity_id: scene.sleep
+  mode: single
